@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Turtles</title>
+
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace al archivo JS -->
+    <script src="tortugas.js"></script>
+
+</head>
+
+<!-- Inicia el Cuerpo del documento -->
+<body>
+    <!-- Seccion de Encabezado -->
+    <header>The Ninja Turtles</header>
+
+    <!-- Seccion barra de navegacion -->
+    <nav>
+        <div>Personajes</div>
+        <div>Capitulos</div>
+        <div>Peliculas</div>
+        <div>Juegos</div>
+        <div><a href="contactanos.html">Contactanos</a></div>
+    </nav>
+    
+    <!-- Seccion principal -->
+    <main>
+        <!-- Lista con las imagenes -->
+        <ul>
+            <li>
+                <img src="images/Leo_tortuga.webp" 
+                alt="img Leonardo"
+                width="60%" 
+                height="auto">
+            </li>
+            <li>
+                <!-- Agregamos un id a esta imagen -->
+                <img src="images/rafa3.png" alt="img Rafael" width="60%" height="auto" id="rafa">
+            </li>
+            <li>
+                <img src="images/mikie.webp" alt="img de Mikie" width="50%" height="auto">
+            </li>
+            <li>
+                <!-- Agregamos un id a esta imagen -->
+                <img src="images/Donatello.webp" alt="img de Donnie" width="50%" height="auto" id="donnie">
+            </li>
+        </ul>
+        <!-- Lista con los nombres -->
+        <ul>
+            <li>Leonardo</li>
+            <li id="rafaName">Rafael</li>
+            <li>Michelangelo</li>
+            <li id="donnieName">Donatello</li>
+        </ul>
+
+        <!-- style="display: inline;" -->
+
+        <!-- Descripcion de Donnie -->
+        <div class="descripcionDonnie">Donatello o Donnie, es el miembro de las Tortugas Ninja que usa el
+             antifaz morado. Se podría decir que él es el inteligente del grupo. 
+             Siempre está pensando en avances tecnológicos y en muchas series o 
+             películas, los presentan como un inventor de gadgets avanzados.
+        </div>
+    </main>
+
+    <!-- Seccion final -->
+    <footer>
+        <div>Bienvenidos a Junior Programmer *__*</div>
+
+        <!-- Crear una seccion para escribir una fecha -->
+        <div id="time"></div>
+    </footer>
+
+<!-- 1. Script Codigo de Javascript -->
+    <script>
+        //1. Enviar msj para chequear
+        console.log("Este es un mensaje a la Consola!");
+        
+        //2. Realizar operaciones
+        let a = 15;
+        let b = 17;
+        let c = a*b/2;
+
+        //muestra el resultado en la consola
+        console.log("A + B = " + c);
+
+        //Creamos una variable y una constante (elemento en la pag web)
+        let time = new Date();
+
+        //declarar un elemento de salida usando ID
+        const  divTime = document.getElementById("time");        
+        
+        //Usar la propiedad innerHTML
+        divTime.innerHTML = "Hoy es " + time.toDateString();
+        //divTime.innerHTML = "A + B = " + c;
+
+        //Cambiar el estilo de una seccion
+        divTime.style.color = "lightgreen";
+        divTime.style.margin= "10px 0 0 0";
+    </script>
+
+</body>
+</html>

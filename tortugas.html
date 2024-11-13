@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Turtles</title>
+
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace al archivo JS -->
+    <script src="tortugas.js"></script>
+</head>
+
+<!-- Inicio del cuerpo del documento -->
+<body>
+    <!-- Seccion de encabezado -->
+    <header>The Ninja Turtles</header>
+
+    <!-- Seccion barra de navegacion -->
+    <nav>
+        <div>Personajes</div>
+        <div>Capitulos</div>
+        <div>Peliculas</div>
+        <div>Juegos</div>
+        <div>Contactanos</div>
+    </nav>
+
+    <!-- Seccion Principal -->
+    <main>
+        <!-- Lista con las imagenes -->
+        <ul>
+            <li>
+                <img src="images/Leo_tortuga.webp"
+                alt="imagen de Leonardo"
+                width="60%"
+                height="auto">
+            </li>
+
+            <li>
+                <img src="images/rafa3.png" alt="imagen de Rafael" width="50%" height="auto"
+                id="rafa">
+            </li>
+            <li>
+                <img src="images/mikie.webp" alt="Imagen de Mikie" width="50%" height="auto">
+            </li>
+            <li>
+                <img src="images/Donatello.webp" alt="Imagen de Donnie" width="50%" height="auto" 
+                id="donnie">
+            </li>
+        </ul>
+
+        <!-- Lista con los nombres -->
+        <ul>
+            <li>Leonardo</li>
+            <li id="rafaName">Rafael</li>
+            <li>Michelangelo</li>
+            <li id="donnieName">Donatello</li>
+        </ul>
+
+        <!-- Descripcion de Donnie -->
+        <div class="descripcionDonnie">Donatello o Donnie, es el miembro de las Tortugas Ninja que usa el
+            antifaz morado. Se podría decir que él es el inteligente del grupo. 
+            Siempre está pensando en avances tecnológicos y en muchas series o 
+            películas, los presentan como un inventor de gadgets avanzados.
+        </div>
+
+        <!-- Seccion Final -->
+        <footer>
+            <div>Bienvenidos a Junior Programmer *__*</div>
+            <!-- Div para escribir datos desde JS -->
+            <div id="salida"></div>
+        </footer>
+
+    </main>
+    
+    <!-- Codigo Javascript -->
+    <script>
+        // Mensaje a la consola
+        console.log("Este es un mensaje a la consola!");
+
+        // Realizar algunas operaciones
+        let a = 15;
+        let b = 17;
+        let c = a*b/2;
+
+        //mostrar resultado en la consola
+        console.log("A + B = " + c);
+
+        //crear una variable para guardar una fecha
+        let fecha = new Date();
+
+        //declarar un elemento de salida usando el ID
+        let divSalida = document.getElementById("salida");
+
+        //Escribir en el elemento salida, usando innerHTML
+        divSalida.innerHTML = "Hoy es " + fecha.toDateString();
+
+        //divSalida.innerHTML += " A + B = " + c;
+
+        //Cambiar elementos de estilo o CSS a la seccion
+        divSalida.style.color = "lightgreen";
+        divSalida.style.margin = "15px 0 0 0";        
+    </script>
+</body>
+</html>

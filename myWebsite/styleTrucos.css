@@ -1,0 +1,20 @@
+html{font-size: 14px;}
+
+body{
+    background-color: lightskyblue;
+}
+
+p
+{
+    color: rgb(34, 52, 145);
+}
+
+h3{
+    color: rgb(235, 73, 41);
+    text-align: center;
+    font-style: oblique;
+    font-size: 2em;
+}
+
+#textoBlanco{color: white;}
+.textoFucsia{color: fuchsia;}
